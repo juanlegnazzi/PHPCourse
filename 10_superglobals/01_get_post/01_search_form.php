@@ -1,11 +1,23 @@
 <?php
-/**
- * User: TheCodeholic
- * Date: 2/8/2020
- * Time: 9:49 AM
- */
+// Print the whole $_GET using var_dump
+echo '<pre>';
+var_dump($_GET);
+echo '</pre>';
 
+// Get the keyword from $_GET and print
+//$keyword = $_GET['keyword'];
+//echo $keyword.'<br>';
+
+// Check if the keyword isset in $_GET
+$keyword = '';
+if (isset($_GET['keyword'])) {
+    $keyword = $_GET['keyword'];
+    echo $keyword . '<br>';
+}
+
+// Set the keyword back in search input
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,7 +30,7 @@
 <body>
 <form action="" method="get">
   <input type="text" name="keyword"
-         placeholder="Type and hit enter">
+         placeholder="Type and hit enter" value="<?php echo $keyword ?>">
   <button>Search</button>
 </form>
 </body>

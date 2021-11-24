@@ -1,0 +1,15 @@
+{
+    "name": "juan/16_autoloading",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./app"
+        }
+    },
+    "authors": [
+        {
+            "name": "Juan Legnazzi",
+            "email": "jflegnazzi@gmail.com"
+        }
+    ],
+    "require": {}
+}
